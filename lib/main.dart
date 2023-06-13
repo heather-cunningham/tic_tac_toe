@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
 
             // creating the ScoreBoard
-            child: Container(
+            child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         Text(
                           xScore.toString(),
-                          style: TextStyle(fontSize: 20,color: Colors.white),
+                          style: const TextStyle(fontSize: 20,color: Colors.white),
                         ),
                       ],
                     ),
@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         Text(
                           oScore.toString(),
-                          style: TextStyle(fontSize: 20,color: Colors.white),
+                          style: const TextStyle(fontSize: 20,color: Colors.white),
                         ),
                       ],
                     ),
@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
 
             // Button for Clearing the Enter board
             // as well as Scoreboard to start allover again
-              child: Container(
+              child: Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -209,7 +209,7 @@ class _HomePageState extends State<HomePage> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text("\" " + winner + " \" is Winner!!!"),
+            title: Text("\" $winner \" is Winner!!!"),
             actions: [
               ElevatedButton(
                 child: const Text("Play Again"),
@@ -235,7 +235,7 @@ class _HomePageState extends State<HomePage> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text("Draw"),
+            title: const Text("Draw"),
             actions: [
               ElevatedButton(
                 child: const Text("Play Again"),
